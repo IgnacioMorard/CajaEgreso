@@ -296,7 +296,7 @@
     </div>
     <div class="stat">
       <div class="stat-val accent" id="statChecked">0</div>
-      <div class="stat-label">Egresadas</div>
+      <div class="stat-label">Confirmadas</div>
     </div>
     <div class="stat">
       <div class="stat-val" id="statPending">0</div>
@@ -447,7 +447,7 @@
         const result = await resp.json();
 
         if (result.ok) {
-          showToast(`✅ ${result.count} caja(s) egresada(s)`);
+          showToast(`✅ ${result.count} caja(s) confirmada(s)`);
         } else {
           showToast("❌ " + (result.error || "Error al confirmar"), true);
         }
