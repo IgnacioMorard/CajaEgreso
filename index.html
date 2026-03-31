@@ -317,7 +317,7 @@
 
   <div class="confirm-bar" id="confirmBar">
     <span class="count"><b id="selCount">0</b> seleccionada(s)</span>
-    <button class="btn-confirm" id="btnConfirm" onclick="confirmarCheck()">Confirmar Egreso</button>
+    <button class="btn-confirm" id="btnConfirm" onclick="confirmarCheck()">Confirmar Existencia</button>
     <button class="btn-cancel" onclick="clearSelection()">Cancelar</button>
   </div>
 
@@ -455,7 +455,7 @@
         showToast("❌ Error de conexión", true);
       } finally {
         btn.disabled = false;
-        btn.textContent = "Confirmar Egreso";
+        btn.textContent = "Confirmar Existencia";
         selected.clear();
         updateBar();
         cargarCajas();
